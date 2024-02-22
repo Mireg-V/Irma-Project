@@ -7,4 +7,4 @@ export default function NavigationButton({ text, activePanel, setActivePanel }) 
       {text}
     </button>
   );
-};
+}; 
