@@ -1,15 +1,14 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styles from './Nav.module.css'
 import NavigationButton from "./NavigationButton";
-import { signal } from "@preact/signals-react";
-
-export const activeButton = signal(null);
+import config from '../config'
 
 export default function Nav() {
+  const [activePanel, setActivePanel] = useState(config.nav[0])
   return (
     <nav className={styles.nav}>
-      {['Послуги', 'Про мене', 'Етапи роботи', 'Результати', 'Відгуки', 'Сертифікати', 'Питання', 'Контакти'].map((text, index) => (
-        <NavigationButton key={index} text={text} />
+      {config.nav.map((text, index) => (
+        <NavigationButton key={index} text={text} activePanel={activePanel} setActivePanel={setActivePanel} />
       ))}
     </nav>
   );

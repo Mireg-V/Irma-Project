@@ -10,6 +10,7 @@
   font-weight: 600;
   text-wrap: nowrap;
   padding: 0.375em 0.75em;
+  transition: all .3s var(--transition);
 }
 .button.active,
 .button:hover {
