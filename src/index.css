@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+:root {
+  --black: #000000;
+  --bg-color-velvet: #140B14;
+  --gold-accent: #FFC300;
+  --soft-white: #e8e8e8;
+  --soft-black: #0d0d0d;
+  --gray16: #161616;
+  --gray24: #242424;
+  --gray32: #323232;
+  --gray48: #484848;
+  --gray64: #646464;
+  --gray80: #808080;
+  --gray96: #929292;
+  --transition: cubic-bezier(.21,.29,0,.94);
+}
+#root {
+  width: 100vw;
+  min-height: 100vh;
+}
+main {
+  min-height: calc(100vh - 160px);;
+  padding: 16px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-color-velvet);
+  background-position: top;
+  background-size: cover;
+  background-repeat: repeat;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, section, summary,
+time, mark, audio, video, button, input {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: none;
+	outline: none;
+	-webkit-tap-highlight-color: none;
+	border: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-decoration: none;
+  color: var(--soft-white);
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0.3px;
+}
+ul {
+list-style: none;
+}
+.no-pointers {
+  pointer-events: none;
+}
