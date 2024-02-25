@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/irma-project/static/css/main.850994fd.css",
+    "main.js": "/irma-project/static/js/main.7bf5f2e6.js",
+    "static/media/avatar.png": "/irma-project/static/media/avatar.7d8618f5681b99ff7cbe.png",
+    "static/media/node-js.png": "/irma-project/static/media/node-js.8b3ece41d89ba24002c7.png",
+    "index.html": "/irma-project/index.html",
+    "static/media/code.svg": "/irma-project/static/media/code.e778d31c2a504b86b0bd6d2a577f3588.svg",
+    "main.850994fd.css.map": "/irma-project/static/css/main.850994fd.css.map",
+    "main.7bf5f2e6.js.map": "/irma-project/static/js/main.7bf5f2e6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.850994fd.css",
+    "static/js/main.7bf5f2e6.js"
+  ]
+}
