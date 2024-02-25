@@ -1,24 +1,14 @@
-import React, { useState } from 'react';
-import './Main.css';
-import ToExternals from './components/ToExternals';
+import React from 'react';
+import { AboutMe } from './components/AboutMe'
 
-function Main() {
-  const [isExternalsOpened, setExternalsOpened] = useState(false)
-
-  const toggleExternals = () => {
-    setExternalsOpened((e) => !e)
-  }
-
+export default function Main() {
   return (
-    <>
-      <Header toggleExternals={toggleExternals} />
-      <main>
-
-      </main>
-      <Footer />
-      <ToExternals isExternalsOpened={isExternalsOpened} toggleExternals={toggleExternals} />
-    </>
+    <main>
+      <left>
+        <AboutMe />
+      </left>
+      <right>  
+      </right>
+    </main>
   );
 }
-
-export default Main;

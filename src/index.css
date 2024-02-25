@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 :root {
   --black: #000000;
   --bg-color-velvet: #140B14;
@@ -17,17 +17,6 @@
 #root {
   width: 100vw;
   min-height: 100vh;
-}
-main {
-  min-height: calc(100vh - 160px);;
-  padding: 16px;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  background-color: var(--bg-color-velvet);
-  background-position: top;
-  background-size: cover;
-  background-repeat: repeat;
 }
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -58,6 +47,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
+  background-color: var(--gray24);
 	line-height: 1;
   overflow-x: hidden;
   overflow-y: auto;
@@ -101,6 +91,21 @@ table {
 ul {
 list-style: none;
 }
-.no-pointers {
-  pointer-events: none;
+main {
+  min-height: 100vh;;
+  padding: 16px;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  background-color: var(--soft-black);
+  background-position: top;
+  background-size: cover;
+  background-repeat: repeat;
+  gap: 16px;
+}
+left {
+  flex: 0.4;
+}
+right {
+  flex: 0.6;
 }

@@ -1,0 +1,75 @@
+.aboutMe {
+  display: flex;
+  border-radius: 24px;
+  padding: 16px;
+  background: radial-gradient(100% 100% at 50% 0,hsla(0,0%,100%,.07) 0,hsla(0,0%,100%,0) 100%),linear-gradient(103.94deg,hsla(0,0%,100%,.05) 7.66%,hsla(0,0%,100%,.02) 32.57%,hsla(0,0%,100%,.008) 72.45%,hsla(0,0%,100%,.05) 96.25%);
+  border: 1px solid hsla(0,0%,100%,.07);
+  flex-direction: column;
+}
+.head,
+.bottom {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.bottom {
+  padding: 8px;
+  min-height: 12vw;
+  background-color: #0d0d0d85;
+  border-radius: 8px;
+  border-top-left-radius: 0px;
+  border: 1px solid hsla(0,0%,100%,.07);
+  align-items: flex-start;
+}
+.head .conteiner {
+  flex: 1 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 12vw;
+  border-top-right-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  gap: 8px;
+}
+.head .conteiner .background {
+  position: absolute;
+  width: 300%;
+  transform: translate(70px, 50px);
+}
+.head .conteiner p {
+  font-size: 36px;
+  color: var(--gray96);
+  font-weight: 300;
+}
+.head .conteiner .title {
+  display: flex;
+  z-index: 1;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: var(--soft-black);
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid hsla(0,0%,100%,.14);
+}
+.head .conteiner .title h1 {
+  font-size: 28px;
+  font-weight: 600;
+}
+.avatar {
+  border-radius: 8px 8px 0 0;
+  width: 12vw;
+  aspect-ratio: 1 / 1;
+  transform: translate(0.5px, 1px);
+  border: 1px solid hsla(0,0%,100%,.07);
+  border-bottom: none;
+}
+.skillsWrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
