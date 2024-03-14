@@ -28,7 +28,6 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 12vw;
   border-top-right-radius: 8px;
   overflow: hidden;
   position: relative;
@@ -61,8 +60,8 @@
   font-weight: 600;
 }
 .avatar {
+  filter: blur(50px);
   border-radius: 8px 8px 0 0;
-  width: 12vw;
   aspect-ratio: 1 / 1;
   transform: translate(0.5px, 1px);
   border: 1px solid hsla(0,0%,100%,.07);

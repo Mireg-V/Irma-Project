@@ -4,6 +4,7 @@
   --bg-color-velvet: #140B14;
   --gold-accent: #FFC300;
   --soft-white: #e8e8e8;
+  --softer-white: #aaa;
   --soft-black: #0d0d0d;
   --gray16: #161616;
   --gray24: #242424;
@@ -15,8 +16,7 @@
   --transition: cubic-bezier(.21,.29,0,.94);
 }
 #root {
-  width: 100vw;
-  min-height: 100vh;
+  height: 100%;
 }
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -48,9 +48,12 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
   background-color: var(--gray24);
-	line-height: 1;
-  overflow-x: hidden;
-  overflow-y: auto;
+  line-height: 1;
+  width: 2480px;
+  margin: 128px;
+  height: 3508px;
+  display: flex;
+  flex-direction: column;
 }
 ol, ul {
 	list-style: none;
@@ -77,6 +80,7 @@ table {
   text-decoration: none;
   color: var(--soft-white);
   font-family: "Nunito", sans-serif;
+  font-size: 48px;
   font-optical-sizing: auto;
   font-style: normal;
 }
@@ -92,20 +96,37 @@ ul {
 list-style: none;
 }
 main {
-  min-height: 100vh;;
-  padding: 16px;
-  width: 100vw;
+  min-height: 100%;
+  padding: 64px;
+  width: 100%;
   display: flex;
   flex-direction: row;
   background-color: var(--soft-black);
   background-position: top;
   background-size: cover;
   background-repeat: repeat;
-  gap: 16px;
+  gap: 64px;
 }
 left {
   flex: 0.4;
 }
 right {
+  display: flex;
+  flex-direction: column;
   flex: 0.6;
+}
+
+hr {
+  width: 1px;
+  height: 1px;
+  border: none;
+  border-radius: 2px;
+  background-color: var(--soft-white);
+  overflow: visible;
+}
+hr[align='horizontal'] {
+  width: 100%;
+}
+hr[align='vertical'] {
+  height: 100%;
 }

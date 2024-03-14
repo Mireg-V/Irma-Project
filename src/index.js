@@ -1,6 +1,6 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import './Index.css';
+import './index.css';
 import Main from './Main';
 
 const root = createRoot(document.getElementById('root'));

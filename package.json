@@ -2,7 +2,7 @@
   "name": "irma-project",
   "version": "0.1.0",
   "private": false,
-  "homepage": "/irma-project",
+  "homepage": "/",
   "dependencies": {
     "@preact/signals-react": "^2.0.0",
     "@testing-library/jest-dom": "^5.17.0",

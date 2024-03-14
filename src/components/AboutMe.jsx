@@ -1,7 +1,6 @@
 import s from './AboutMe.module.css'
 import avatar from '../images/avatar.png'
 import devIcon from '../images/code.svg'
-import { Skill } from './Skill'
 
 export function AboutMe() {
   return (
@@ -18,14 +17,7 @@ export function AboutMe() {
         </div>
       </div>
       <div className={s.bottom}>
-        <div className={s.skillsWrapper} >
-          <Skill type='node' />
-          <Skill type='react' />
-          <Skill type='javascript' />
-          <Skill type='typescript' />
-          <Skill type='next' />
-          <Skill type='docker' />
-        </div>
+
       </div>
     </div>
   )

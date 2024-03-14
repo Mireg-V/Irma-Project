@@ -1,5 +1,6 @@
 import React from 'react';
 import { AboutMe } from './components/AboutMe'
+import { Experience } from './components/Experience';
 
 export default function Main() {
   return (
@@ -7,7 +8,8 @@ export default function Main() {
       <left>
         <AboutMe />
       </left>
-      <right>  
+      <right>
+        <Experience />
       </right>
     </main>
   );
