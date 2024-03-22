@@ -146,6 +146,7 @@ export function Work({type, children}) {
         {getDescriptionWithClasses(x.description)}
       </div>
       {children}
+      {x.secondDescription}
       <hr align='vertical' />
       <end>{x.end || 'Now'}</end>
     </div>

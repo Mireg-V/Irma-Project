@@ -16,7 +16,7 @@ export function AboutMe() {
         </div>
       </div>
       <div className={s.bottom}>
-
+        Продам ваш код китайцам за пачку сухариков и кошко-жену
       </div>
     </div>
   )

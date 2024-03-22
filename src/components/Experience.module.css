@@ -196,7 +196,7 @@
 .description span {
   margin-right: 8px;
   display: inline-flex;
-  transform: translateY(5px);
+  transform: translateY(6px);
   gap: 4px;
   flex-wrap: wrap;
   line-height: 1;
