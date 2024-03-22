@@ -8,7 +8,6 @@ export function AboutMe() {
       <div className={s.head}>
         <img className={s.avatar} src={avatar} alt='Avatar'/>
         <div className={s.conteiner}>
-          <img className={s.background} src={'https://cdn.impactium.fun/ui/diamond-full-pattern.svg'} alt=''/>
           <p>Herasymchuk Mark</p>
           <div className={s.title}>
             <img src={devIcon} height={32} alt='' />

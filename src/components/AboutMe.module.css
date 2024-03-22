@@ -33,11 +33,6 @@
   position: relative;
   gap: 8px;
 }
-.head .conteiner .background {
-  position: absolute;
-  width: 300%;
-  transform: translate(70px, 50px);
-}
 .head .conteiner p {
   font-size: 36px;
   color: var(--gray96);
@@ -60,7 +55,6 @@
   font-weight: 600;
 }
 .avatar {
-  filter: blur(50px);
   border-radius: 8px 8px 0 0;
   aspect-ratio: 1 / 1;
   transform: translate(0.5px, 1px);

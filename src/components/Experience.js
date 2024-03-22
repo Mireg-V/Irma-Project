@@ -1,7 +1,9 @@
-import s from './Experience.module.css'
 import { Work } from './Work'
 export function Experience() {
   return (
-    <Work />
+    <Work type='impactium'>
+      <Work type='datacode'/>
+      <Work type='def'/>
+    </Work>
   )
 }

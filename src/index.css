@@ -4,7 +4,7 @@
   --bg-color-velvet: #140B14;
   --gold-accent: #FFC300;
   --soft-white: #e8e8e8;
-  --softer-white: #aaa;
+  --softer-white: #ccc;
   --soft-black: #0d0d0d;
   --gray16: #161616;
   --gray24: #242424;
@@ -105,7 +105,7 @@ main {
   background-position: top;
   background-size: cover;
   background-repeat: repeat;
-  gap: 64px;
+  gap: 32px;
 }
 left {
   flex: 0.4;
