@@ -247,3 +247,6 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.description span.mysql {
+  color: #E68F00;
+}

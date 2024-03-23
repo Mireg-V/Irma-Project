@@ -55,7 +55,15 @@ export function Work({type, children}) {
         location: 'Italy',
         site: 'https://datacode.it'
       },
-      description: `Аутсорсинговая компания. Работал в гибридном формате. Иногда приезжал в офис на open-space. Первых три месяца проходил стажировку, паралельно выполняя поставленные задачи. Тим-лид дважды в неделю проводил код-ревью, где мы решали проблемы кода и реализовывали маштабируемость. Всего за время работы поменял четыре проекта, где практически везде использовался React в качестве клиентской стороны, Node.js на фреймворке Express как серверная часть, и MongoDB для хранения данных. Время от времени общался с клиентами в онлайн формате, для корректирования нововведений и `,
+      description: `Аутсорсинговая компания. Работал в гибридном формате. 
+      Частично работал с офиса в режиме open-space. Первых три месяца проходил 
+      стажировку, паралельно выполняя поставленные задачи. Регулярные код-ревью 
+      с командой, где мы решали проблемы кода и обсуждали принятые архитектурные 
+      решения. За этот период учавствовал в разваботке четырёх проектов. Работал 
+      с React в качестве клиентской стороны, Node.js на фреймворке Express как 
+      серверной части. MongoDB и MySQL для хранения данных. Время от времени 
+      созванивался клиентами для корректирования нововведений и внедрения 
+      правок. В основном SEO и e-commerse. `,
       positions: [
         {
           code: 'fullstack',
@@ -76,7 +84,17 @@ export function Work({type, children}) {
         location: 'USA',
         site: 'https://def.wtf'
       },
-      description: `I’m working on a startup project for an English language learning app. I hold the position of a full-fledged Backend Developer, but due to my personal qualities, I take on some Flutter tasks as well. We use the Nest.js framework along with gRPC for writing the backend part and its corresponding microservices. I’ve been deeply involved in integrating customer.io into the app, which quickly boosted engagement and retention. I’ve conducted Prisma migrations on a serverless architecture based on CockroachDB under the aegis of PostgreSQL. During horizontal scaling moments, I handle orchestration through K8s and Docker. I’ve set up a CDN using Redis and sharding through regional servers. I’ve actively participated in the implementation of P2P livekit websocket video calls.`,
+      description: `I’m working on a startup project for an English language learning 
+      app. I hold the position of a full-fledged Backend Developer, but due to my 
+      personal qualities, I take on some Flutter tasks as well. We use the Nest.js 
+      framework along with gRPC for writing the backend part and its corresponding 
+      microservices. I’ve been deeply involved in integrating customer.io into the 
+      app, which quickly boosted engagement and retention. I’ve conducted Prisma 
+      migrations on a serverless architecture based on CockroachDB under the aegis 
+      of PostgreSQL. During horizontal scaling moments, I handle orchestration 
+      through K8s and Docker. I’ve set up a CDN using Redis and sharding through 
+      regional servers. I’ve actively participated in the implementation of P2P 
+      livekit websocket video calls.`,
       positions: [
         {
           code: 'backend',
@@ -91,7 +109,7 @@ export function Work({type, children}) {
   }
   const x = map[type]
   const getDescriptionWithClasses = (description) => {
-    const keywords = ['nest', 'node', 'react', 'next', 'postgresql', 'k8s', 'flutter', 'docker', 'docker', 'cockroachdb', 'prisma', 'mongodb', 'redis'];
+    const keywords = ['nest', 'node', 'react', 'next', 'postgresql', 'k8s', 'flutter', 'docker', 'docker', 'cockroachdb', 'prisma', 'mongodb', 'redis', 'mysql'];
     return description.split(' ').map((word, index) => {
       const reword = word.split('.')[0].toLowerCase();
       if (
