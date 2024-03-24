@@ -1,5 +1,6 @@
 /* eslint-disable react/style-prop-object */
 import s from './Experience.module.css'
+import { KeyRole } from './KeyRole';
 
 export function Work({type, children}) {
   const map = {
@@ -16,31 +17,8 @@ export function Work({type, children}) {
         location: 'Ucraine',
         site: 'https://impactium.fun'
       },
-      description: `Мой батя долбашит вообще адовые блюда. 
-         Ну такой вот примерно рецепт усредненный, потому что
-         вариаций масса. Берется суп, он не греется, греть - 
-         это не про моего батю. Он берет это суп, вываливает
-         его на сковороду и начинает жарить. Добавляет в него 
-         огромное количество лука, чеснока, перца черного и 
-         красного МУКИ! для вязкости, томатная паста сверху. 
-         Все это жарится до дыма. Потом снимается с огня и 
-         остужается на балконе. Потом батя заносит и щедро 
-         полив майонезом начинает есть. При этом ест со сковороды 
-         шкрябая по ней ложкой. Ест и приговаривает полушепотом ух 
-         блѣ. При этом у него на лбу аж пот выступает. Любезно мне 
-         иногда предлагает, но я отказываюсь. Надо ли говорить о 
-         том какой дичайший пердеж потом? Вонища такая, что 
-         обои от стен отклеиваются.`,
-      positions: [
-        {
-          code: 'fullstack',
-          title: 'Fullstack Developer'
-        },
-        {
-          code: 'community',
-          title: 'Community Analyst'
-        }
-      ]
+      description: `My proprietary venture. Initially conceived as a hub-toolkit for data collection, processing, and analysis for guilds in the MMO-RPG Albion Online. Assembling a team of three developers, we embarked on the project. The first full-fledged project was a data scraper that collected data from official and unofficial sources, and processed them using AI and our own Python algorithms. After working with large alliances in the game for four months, we improved the performance of our systems and the quality of algorithms using Node.js. In total, by the seventh month, we attracted more than three thousand dollars in donations and wrote the client part on Next.js, turning the project into an open-source product, which was completely transferred to another team of developers. It is currently located at the domain https://albionbattles.com/. The next big project was a multiplayer SMP for communication and creativity. Accepting two new developers into the team, we got to work. We used cloud servers on the pterodactyl platform. Implemented websocket for interaction with them. I single-handedly organized a development strategy based using Jira, and delegated the team to optimize and improve workflows using kanban strategy. I was setting up nginx for proxying and pre-processing incoming requests. Implemented cloud servers via SFTP for storing user media files and FTP for their reuse in CDN (content delivery network). Did a lot of work with cloudflare setting up dns records and preliminary routing throughout the infrastructure, including the aforementioned CDN. I kept my finger on the pulse, consistently maintaining contact with the community, which allowed me to respond timely and qualitatively to user requests. One of the key decisions I made was to implement voice chat in our virtual environment and our own trading platform for buying and exchanging skins and in-game items. Now the project is in a frozen state due to different views on the vector of product development among developers. In my free time, I am rewriting the project on the Nest.js framework and breaking our monolith into a microservice architecture using RabbitMQ.`,
+      positions: ['fullstack', 'community']
     },
     datacode: {
       start: '12.05.2023',
@@ -55,21 +33,12 @@ export function Work({type, children}) {
         location: 'Italy',
         site: 'https://datacode.it'
       },
-      description: `Аутсорсинговая компания. Работал в гибридном формате. 
-      Частично работал с офиса в режиме open-space. Первых три месяца проходил 
-      стажировку, паралельно выполняя поставленные задачи. Регулярные код-ревью 
-      с командой, где мы решали проблемы кода и обсуждали принятые архитектурные 
-      решения. За этот период учавствовал в разваботке четырёх проектов. Работал 
-      с React в качестве клиентской стороны, Node.js на фреймворке Express как 
-      серверной части. MongoDB и MySQL для хранения данных. Время от времени 
-      созванивался клиентами для корректирования нововведений и внедрения 
-      правок. В основном SEO и e-commerse. `,
-      positions: [
-        {
-          code: 'fullstack',
-          title: 'Fullstack Developer'
-        }
-      ]
+      description: `I worked at an outsourcing company in a hybrid format, splitting my time between working remotely and from an open-space office. For the first three months, I was an intern, simultaneously accomplishing assigned tasks. Regular code reviews were conducted with the team, where we addressed code issues and discussed architectural decisions. During this period, I participated in the development of four projects.
+
+      I worked with React for the client-side, Node.js on the Express framework for the server-side, and MongoDB and MySQL for data storage. From time to time, I had calls with clients to adjust innovations and implement corrections.
+      
+      I specialized in writing SEO and e-commerce solutions, but I also practiced and created landing pages for restaurant businesses. I implemented deep integration with 1C and third-party services such as Shopify.`,
+      positions: ['fullstack']
     },
     def: {
       start: '04.03.2024',
@@ -84,7 +53,7 @@ export function Work({type, children}) {
         location: 'USA',
         site: 'https://def.wtf'
       },
-      description: `I’m working on a startup project for an English language learning 
+      description: `I’m working on a project for an English language learning 
       app. I hold the position of a full-fledged Backend Developer, but due to my 
       personal qualities, I take on some Flutter tasks as well. We use the Nest.js 
       framework along with gRPC for writing the backend part and its corresponding 
@@ -95,31 +64,32 @@ export function Work({type, children}) {
       through K8s and Docker. I’ve set up a CDN using Redis and sharding through 
       regional servers. I’ve actively participated in the implementation of P2P 
       livekit websocket video calls.`,
-      positions: [
-        {
-          code: 'backend',
-          title: 'Backend Developer'
-        },
-        {
-          code: 'devops',
-          title: 'Development & Operations'
-        }
-      ]
+      positions: ['backend', 'devops']
     }
   }
   const x = map[type]
   const getDescriptionWithClasses = (description) => {
-    const keywords = ['nest', 'node', 'react', 'next', 'postgresql', 'k8s', 'flutter', 'docker', 'docker', 'cockroachdb', 'prisma', 'mongodb', 'redis', 'mysql'];
+    const keywords = ['nest', 'node', 'react', 'postgresql', 'next.js', 'k8s', 'flutter', 'docker', 'docker', 'cockroachdb', 'prisma', 'mongodb', 'redis', 'mysql', 'pterodactyl', 'nginx', 'rabbitmq', 'jira'];
     return description.split(' ').map((word, index) => {
+      const pun = word.endsWith(',')
+        ? ','
+        : word.endsWith('.')
+          ? '.'
+          : ''
+      if (word.endsWith(',') || word.endsWith('.')) {
+        word = word.slice(0, -1);
+      }
       const reword = word.split('.')[0].toLowerCase();
-      if (
-        keywords.includes(reword)
-        || keywords.includes(reword+'js')
-        || keywords.includes(reword+'.js')
-        ) {
-        return <span key={index} className={s[reword]}><img src={`/${reword}.png`} alt=''/>{word}</span>;
-      } else {
-        return word + ' ';
+      if (word.startsWith('Rabbit')) {
+        console.log({word, reword, pun})
+      }
+      if (keywords.includes(reword) || keywords.includes(word.toLowerCase())) {
+        return <><span key={index} className={s[reword]}><img src={`/${reword}.png`} alt=''/>{word}</span>{pun} </>;
+      } else if (word.startsWith('https')) {
+        return <><a key={index} href={word}>{word.substring(8).slice(0, -1)}</a>{'. '}</>;
+      }
+      else {
+        return word + pun + ' ';
       }
     });
   };
@@ -130,11 +100,8 @@ export function Work({type, children}) {
         <div className={s.top}>
           <img src={x.logo} alt=''/>
           {x.name && (<h3>{x.name}</h3>)}
-          {x.positions.map(exp => (
-            <div key={exp.code} className={`${s.role} ${s[exp.code]}`}>
-              {exp.title}
-              <img src={`/${exp.code}.svg`} alt=''/>
-            </div>
+          {x.positions.map(e => (
+            <KeyRole role={e} />
           ))}
         </div>
         <div className={s.bottom}>
@@ -164,7 +131,6 @@ export function Work({type, children}) {
         {getDescriptionWithClasses(x.description)}
       </div>
       {children}
-      {x.secondDescription}
       <hr align='vertical' />
       <end>{x.end || 'Now'}</end>
     </div>

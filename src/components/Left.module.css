@@ -1,0 +1,132 @@
+.default {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.default hr {
+  width: 100%;
+  height: 1px;
+  background: #cccc;
+  border-radius: 100%;
+}
+.default hr:nth-child(n+3) {
+  background: #cccccc80;
+}
+.default h4 {
+  height: 42px;
+  font-weight: 100;
+}
+.place {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  overflow: hidden;
+  max-width: 100%;
+}
+.place > img {
+  border-radius: 8px;
+  height: 128px;
+}
+.place .description {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+  gap: 16px;
+  justify-content: center;
+}
+.place .description div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+.place .description div p,
+.place .description div span {
+  font-weight: 600;
+  font-size: 32px;
+  text-wrap: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.place .description div p {
+  color: var(--softer-white);
+}
+.place .description div:last-child p {
+  font-weight: 200;
+}
+.place .description span {
+  flex: 1;
+  text-align: end;
+  color: var(--gray96);
+}
+.place .description img {
+  height: 48px;
+}
+.place .description div a {
+  font-size: 32px;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: flex-end;
+  text-decoration: underline;
+}
+
+.skills ul {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+}
+.skills li {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.skills li img {
+  height: 64px;
+}
+.skills li p {
+  font-size: 42px;
+  font-weight: 100;
+}
+
+.skills ul div {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  position: relative;
+  width: 100%;
+}
+
+.skills ul li section {
+  height: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  background: var(--gray48);
+}
+.skills ul li section[position='first'] {
+  border-top-left-radius: 128px;
+  border-bottom-left-radius: 128px;
+}
+.skills ul li section[position='last'] {
+  border-top-right-radius: 128px;
+  border-bottom-right-radius: 128px;
+}
+.skills ul li section[done='true'] {
+  background-color: var(--softer-white);
+}
+.skills ul li section[level]::before {
+  content: attr(level);
+  font-size: 22px;
+  border-radius: 128px;
+  background-color: var(--softer-white);
+  color: var(--soft-black);
+  padding: 4px 12px;
+  font-weight: 700;
+  transform: translateY(-24px);
+}

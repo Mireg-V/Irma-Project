@@ -10,6 +10,9 @@
   --es: #7C7C7C;
   --ee: #141414;
 }
+.work .work {
+  margin-top: 16px;
+}
 .work hr {
   position: absolute;
   left: -32px;
@@ -17,7 +20,7 @@
   width: 4px;
   transform: translateX(-50%);
   margin: 48px 0;
-  border-radius: 50px;
+  border-radius: 96px;
   background: linear-gradient(180deg,
     rgba(232,232,232,1) 0%,
     rgba(183,183,183,1) 40%,
@@ -104,15 +107,15 @@
 .heading {
   background: radial-gradient(100% 100% at 50% 0, hsla(0, 0%, 100%, .07) 0, hsla(0, 0%, 100%, 0) 100%), linear-gradient(103.94deg, hsla(0, 0%, 100%, .05) 7.66%, hsla(0, 0%, 100%, .02) 32.57%, hsla(0, 0%, 100%, .008) 72.45%, hsla(0, 0%, 100%, .05) 96.25%);
   border: 1px solid hsla(0, 0%, 100%, .07);
-  padding: 0.5em 0.75em;
-  border-radius: 0.66em;
+  padding: 32px;
+  border-radius: 32px;
   display: flex;
   flex-direction: column;
-  gap: 0.5em
+  gap: 16px
 }
 .heading .top {
   display: flex;
-  gap: 0.5em;
+  gap: 32px;
   flex-direction: row;
   align-items: center;
 }
@@ -157,7 +160,7 @@
 }
 .description {
   font-size: 32px;
-  padding: 0 .75em;
+  padding: 0 32px;
   line-height: 1.375;
   text-rendering: optimizeLegibility;
   color: var(--softer-white)
@@ -194,16 +197,20 @@
   height: 48px !important;
 }
 .description span {
-  margin-right: 8px;
   display: inline-flex;
-  transform: translateY(6px);
+  transform: translateY(12%);
   gap: 4px;
   flex-wrap: wrap;
   line-height: 1;
   align-items: center;
 }
+.description a {
+  text-decoration: underline;
+  color: var(--softer-white);
+}
 .description span img {
-  height: 32px;
+  height: 28px;
+  transform: translateY(-2px);
 }
 .description span.nest {
   color: #ea2845;
@@ -249,4 +256,19 @@
 }
 .description span.mysql {
   color: #E68F00;
+}
+.description span.next img {
+  filter: drop-shadow(0px 0px 6px white);
+}
+.description span.pterodactyl {
+  color: #BD6E35;
+}
+.description span.nginx {
+  color: #009900;
+}
+.description span.rabbitmq {
+  color: #FF6600;
+}
+.description span.jira {
+  color: #2684FF;
 }
