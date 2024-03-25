@@ -50,7 +50,6 @@ body {
   background-color: var(--gray24);
   line-height: 1;
   width: 2480px;
-  margin: 128px;
   height: 3508px;
   display: flex;
   flex-direction: column;

@@ -1,8 +1,8 @@
 {
-  "name": "irma-project",
+  "name": "web-resume",
   "version": "0.1.0",
   "private": false,
-  "homepage": "/",
+  "homepage": "https://mireg-v.github.io/Web-Resume/",
   "dependencies": {
     "@preact/signals-react": "^2.0.0",
     "@testing-library/jest-dom": "^5.17.0",
