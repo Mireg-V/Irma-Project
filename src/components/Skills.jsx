@@ -8,7 +8,7 @@ export function Skills() {
       <hr align='horizontal' />
       <ul>
         <li>
-          <img src='/english.webp' alt=''/>
+          <img src='english.webp' alt=''/>
           <p>English</p>
           <div>
             <section position='first' done='true' />
@@ -20,7 +20,7 @@ export function Skills() {
           </div>
         </li>
         <li>
-          <img src='/ucraine.webp' alt=''/>
+          <img src='ucraine.webp' alt=''/>
           <p>Ukrainian</p>
           <div>
             <section position='first' done='true' />
@@ -32,7 +32,7 @@ export function Skills() {
           </div>
         </li>
         <li>
-          <img src='/poland.webp' alt=''/>
+          <img src='poland.webp' alt=''/>
           <p>Polish</p>
           <div>
             <section position='first' done='true' />
@@ -44,7 +44,7 @@ export function Skills() {
           </div>
         </li>
         <li>
-          <img src='/russia.webp' alt=''/>
+          <img src='russia.webp' alt=''/>
           <p>Russian</p>
           <div>
             <section position='first' done='true' />
@@ -56,7 +56,7 @@ export function Skills() {
           </div>
         </li>
         <li>
-          <img src='/italy.webp' alt=''/>
+          <img src='italy.webp' alt=''/>
           <p>Italian</p>
           <div>
             <section position='first' done='true' />

@@ -7,13 +7,13 @@ export function Work({type, children}) {
     impactium: {
       start: '02.01.2021',
       end: false,
-      logo: '/impactium-dimmed.svg',
+      logo: 'impactium-dimmed.svg',
       name: 'Impactium',
       properties: {
         peoples: 5,
         hours: 40,
         mode: 'Full-remote',
-        modeIcon: '/remote.svg',
+        modeIcon: 'remote.svg',
         location: 'Ucraine',
         site: 'https://impactium.fun'
       },
@@ -23,13 +23,13 @@ export function Work({type, children}) {
     datacode: {
       start: '12.05.2023',
       end: '14.12.2023',
-      logo: '/datacode.png',
+      logo: 'datacode.png',
       name: '',
       properties: {
         peoples: 46,
         hours: 10,
         mode: 'Hybrid',
-        modeIcon: '/hybrid.svg',
+        modeIcon: 'hybrid.svg',
         location: 'Italy',
         site: 'https://datacode.it'
       },
@@ -43,13 +43,13 @@ export function Work({type, children}) {
     def: {
       start: '04.03.2024',
       end: false,
-      logo: '/def.svg',
+      logo: 'def.svg',
       name: '',
       properties: {
         peoples: 9,
         hours: 10,
         mode: 'Full-remote',
-        modeIcon: '/remote.svg',
+        modeIcon: 'remote.svg',
         location: 'USA',
         site: 'https://def.wtf'
       },
@@ -84,7 +84,7 @@ export function Work({type, children}) {
         console.log({word, reword, pun})
       }
       if (keywords.includes(reword) || keywords.includes(word.toLowerCase())) {
-        return <><span key={index} className={s[reword]}><img src={`/${reword}.png`} alt=''/>{word}</span>{pun} </>;
+        return <><span key={index} className={s[reword]}><img src={`${reword}.png`} alt=''/>{word}</span>{pun} </>;
       } else if (word.startsWith('https')) {
         return <><a key={index} href={word}>{word.substring(8).slice(0, -1)}</a>{'. '}</>;
       }
@@ -106,11 +106,11 @@ export function Work({type, children}) {
         </div>
         <div className={s.bottom}>
           <div className={s.exp}>
-            <img src='/users.svg' alt=''/>
+            <img src='users.svg' alt=''/>
             <p>{x.properties.peoples} peoples</p>
           </div>
           <div className={s.exp}>
-            <img src='/time.svg' alt=''/>
+            <img src='time.svg' alt=''/>
             <p>{x.properties.hours} hrs/w</p>
           </div>
           <div className={s.exp}>
@@ -118,11 +118,11 @@ export function Work({type, children}) {
             <p>{x.properties.mode}</p>
           </div>
           <div className={s.exp}>
-            <img src='/point.svg' alt=''/>
+            <img src='point.svg' alt=''/>
             <p>{x.properties.location}</p>
           </div>
           <div className={s.exp}>
-            <img src='/globe.svg' alt=''/>
+            <img src='globe.svg' alt=''/>
             <a href={x.properties.site}>{x.properties.site.substring(8)}</a>
           </div>
         </div>

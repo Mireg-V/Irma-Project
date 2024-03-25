@@ -145,15 +145,18 @@
   filter: drop-shadow(0px 3px 2px #cccccc50) brightness(0.8);
   align-items: center;
   justify-content: center;
+  pointer-events: all;
 }
 .heading .exp a,
 .heading .exp p {
+  pointer-events: all;
   font-size: 32px;
   font-weight: 500;
   color: var(--softer-white);
 }
 .heading .exp a {
   text-decoration: underline;
+  pointer-events: all;
 }
 .heading .exp img {
   height: 38px !important;
@@ -224,9 +227,6 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.description span.next {
-  color: #fff;
-}
 .description span.react {
   color: #4DCFE0;
 }
@@ -249,13 +249,13 @@
   color: #D82F27;
 }
 .description span.prisma {
-  background: -webkit-linear-gradient(left, #fff, #0C354B);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #3d667c;
 }
 .description span.mysql {
   color: #E68F00;
+}
+.description span.next {
+  color: #fff;
 }
 .description span.next img {
   filter: drop-shadow(0px 0px 6px white);
@@ -278,6 +278,7 @@
   flex: 1;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 .accepter img {
   height: 48px;
@@ -285,4 +286,24 @@
 .accepter p {
   font-size: 36px;
   font-weight: 600;
+}
+.accepter h6 {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  bottom: 0;
+  right: 0;
+  font-size: 16px;
+}
+.accepter h6 img {
+  display: inline-flex;
+  height: 16px;
+}
+.accepter h6 img.heart {
+  filter: drop-shadow(0px 2px 5px #ff227f);
+  height: 24px;
+}
+.accepter span {
+  font-weight: 300;
 }

@@ -1,6 +1,5 @@
 import s from './AboutMe.module.css'
 import avatar from '../images/avatar.png'
-import { KeyRole } from './KeyRole'
 
 export function AboutMe() {
   return (

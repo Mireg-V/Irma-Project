@@ -12,7 +12,7 @@ export function KeyRole({ role }) {
   return (
     <div className={`${s.role} ${s[role]}`}>
       {map[role]}
-      <img src={`/${role}.svg`} alt=''/>
+      <img src={`${role}.svg`} alt=''/>
   </div>
   );
 };
