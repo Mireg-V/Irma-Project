@@ -1,5 +1,5 @@
 import React from 'react';
-import s from './Experience.module.css'
+import s from './Right.module.css'
 
 export function KeyRole({ role }) {
   const map = {

@@ -10,7 +10,7 @@ export function AboutMe() {
         <p>Herasymchuk Mark</p>
       </div>
       <div className={s.bottom}>
-            Продам ваш код китайцам за пачку сухариков и кошко-жену
+            Любитель забивать гвозди микроскопом
         {/* <KeyRole role={'fullstack'} />
         <KeyRole role={'devops'} />
         <KeyRole role={'backend'} />

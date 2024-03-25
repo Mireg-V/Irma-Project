@@ -1,5 +1,5 @@
 /* eslint-disable react/style-prop-object */
-import s from './Experience.module.css'
+import s from './Right.module.css'
 import { KeyRole } from './KeyRole';
 
 export function Work({type, children}) {

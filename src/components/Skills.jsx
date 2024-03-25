@@ -21,7 +21,7 @@ export function Skills() {
         </li>
         <li>
           <img src='/ucraine.webp' alt=''/>
-          <p>Ucrainian</p>
+          <p>Ukrainian</p>
           <div>
             <section position='first' done='true' />
             <section done='true' />

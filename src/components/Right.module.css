@@ -5,10 +5,10 @@
   margin-left: 32px;
   position: relative;
   gap: 16px;
-  --ss: #b8b8b8;
-  --se: #868686;
-  --es: #7C7C7C;
-  --ee: #141414;
+  --ss: #A0A0A0;
+  --se: #575757;
+  --es: #4F4F4F;
+  --ee: #0D0D0D;
 }
 .work .work {
   margin-top: 16px;
@@ -271,4 +271,18 @@
 }
 .description span.jira {
   color: #2684FF;
+}
+.accepter {
+  gap: 8px;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+.accepter img {
+  height: 48px;
+}
+.accepter p {
+  font-size: 36px;
+  font-weight: 600;
 }

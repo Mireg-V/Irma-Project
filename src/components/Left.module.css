@@ -123,10 +123,63 @@
 .skills ul li section[level]::before {
   content: attr(level);
   font-size: 22px;
-  border-radius: 128px;
+  border-radius: 16px;
+  border-bottom-left-radius: 0;
   background-color: var(--softer-white);
   color: var(--soft-black);
   padding: 4px 12px;
   font-weight: 700;
-  transform: translateY(-24px);
+  width: 100%;
+  text-align: center;
+  transform: translateY(-16px);
+  border-bottom-right-radius: 0;
+}
+.story p {
+  font-size: 32px;
+  line-height: 1.375;
+  color: var(--softer-white);
+}
+.links {
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 16px;
+  font-weight: 600;
+  white-space: nowrap;
+  gap: 8px;
+  justify-content: center;
+  border-radius: 50px;
+  font-size: 32px;
+}
+.link img {
+  height: 48px;
+}
+.link.telegram {
+  background: #259CD824;
+  color: #259CD8;
+}
+.link.viber {
+  background: #563FB724;
+  color: #563FB7;
+}
+.link.whatsapp {
+  background: #43C45424;
+  color: #43C454;
+}
+.link.linkedin {
+  background: #0A66C224;
+  color: #0A66C2;
+}
+.link.email {
+  background: #CD3C3024;
+  color: #CD3C30;
+}
+.link.djinni {
+  background: #4858FF24;
+  color: #4858FF;
 }
