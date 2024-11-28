@@ -4,6 +4,7 @@
   "private": false,
   "homepage": "https://mireg-v.github.io/Web-Resume/",
   "dependencies": {
+    "@impactium/icons": "^1.1.0",
     "@preact/signals-react": "^2.0.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
