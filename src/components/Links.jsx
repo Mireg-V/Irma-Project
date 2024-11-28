@@ -13,7 +13,7 @@ export function Links() {
       <Link type='Viber' href='viber://chat?number=380669683611' />
       <Link type='email' href='mailto:markgerasimchuk8@gmail.com' />
       <Link type='djinni' href='https://djinni.co/q/5fb5a218a6/' />
-      <Link type='GitHub' href='https://github.com/Mireg-V/' />
+      <Link type='GitHub' href='https://github.com/MiregX/' />
     </div>
   );
 }
